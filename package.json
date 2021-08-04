@@ -1,6 +1,6 @@
 {
-  "name": "@nuxtjs/amp",
-  "version": "0.5.4",
+  "name": "@esyoil-gmbh/nuxtts-amp",
+  "version": "0.5.5",
   "description": "AMP Module for Nuxt",
   "license": "MIT",
   "contributors": [
@@ -20,7 +20,7 @@
     "dev": "nuxt example",
     "lint": "eslint lib test",
     "test": "yarn lint && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "tsc && standard-version && git push --follow-tags && npm publish"
   },
   "files": [
     "lib",
