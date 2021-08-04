@@ -1,6 +1,6 @@
 {
   "name": "@esyoil-gmbh/nuxtts-amp",
-  "version": "0.5.6",
+  "version": "0.5.8",
   "description": "AMP Module for Nuxt",
   "license": "MIT",
   "contributors": [
@@ -29,7 +29,6 @@
   "dependencies": {
     "amphtml-validator": "^1.0.34",
     "chalk": "^4.1.0",
-    "consola": "^2.15.3",
     "raw-loader": "^4.0.2"
   },
   "devDependencies": {
