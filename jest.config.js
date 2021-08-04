@@ -2,20 +2,20 @@ module.exports = {
   preset: 'jest-puppeteer',
   collectCoverage: true,
   collectCoverageFrom: [
-    'lib/**/*.js',
-    '!lib/plugin.js'
+    'src/**/*.ts',
+    '!src/plugin.ts'
   ],
   moduleNameMapper: {
-    '^~/(.*)$': '<rootDir>/lib/$1',
+    '^~/(.*)$': '<rootDir>/src/$1',
     '^~~$': '<rootDir>',
     '^@@$': '<rootDir>',
-    '^@/(.*)$': '<rootDir>/lib/$1'
+    '^@/(.*)$': '<rootDir>/src/$1'
   },
   transform: {
-    // process js with `babel-jest`
-    '^.+\\.js$': '<rootDir>/node_modules/babel-jest'
+    // process ts with `babel-jest`
+    '^.+\\.ts$': '<rootDir>/node_modules/babel-jest'
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!nuxt-i18n).+\\.js$'
+    '/node_modules/(?!nuxt-i18n).+\\.ts$'
   ]
 }
